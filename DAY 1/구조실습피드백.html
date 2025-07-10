@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>구조실습 피드백</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        background: pink;
+        padding: 16px 32px;
+        align-items: center;
+    }
+
+    .header_menu {
+        display: flex;
+        list-style: none;
+    }
+
+    .header_menu > li {
+        margin: 16px;
+    }
+
+    .header_menu > li > a {
+        color: red;
+        text-decoration: none;
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .news_article {
+        border: 1px solid red;
+        margin: 16px;
+        padding: 8px;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .content_section {
+        width: 70%;
+    }
+
+    .aside {
+        width: 30%;
+    }
+
+    footer {
+        height: 200px;
+        background: pink;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul class="header_menu">
+                <li>
+                    <a href="#">
+                     menu1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                     menu2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                     munu3
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content_section">
+            <article class="news_article">
+                <h2>수영하는 고양이 봤음?</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati culpa rem neque voluptatibus quam quas incidunt impedit, eaque modi dicta vero illum alias blanditiis praesentium laborum mollitia amet maiores. Atque!
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>점박이 물범과 고양이의 휴식</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rerum reprehenderit quaerat, quidem alias corrupti deleniti aliquam ipsum tempora perspiciatis dolorem voluptates nam a obcaecati vitae quos consequatur voluptatibus iste.
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>건강한 수면을 유지하는 방법</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis in voluptatem nemo eos omnis atque voluptates architecto est id nesciunt ut tenetur itaque et, odio, amet tempore blanditiis molestiae nisi.
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>신지의 결혼상대?</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, animi magni magnam suscipit ea sunt voluptatem non autem nostrum ipsum alias fuga repudiandae commodi ad quae doloremque quo veniam? Facilis?
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>20대 영양재 섭취율</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, officiis blanditiis? Quidem accusamus sed odio id atque sit ratione quod placeat veniam tenetur! Dolorem vel accusamus, iste esse id ratione.
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>월요일 직장인 피로도 100%</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius animi vel asperiores aspernatur iste. Cupiditate, molestiae iste laudantium minima hic sint iusto illum est voluptas a necessitatibus quas recusandae magni!
+                </p>
+            </article>
+        </section>
+
+        <aside class="aside">
+            <h3>right aside</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nobis blanditiis veritatis laboriosam maiores, explicabo odio ab obcaecati quo excepturi magni aliquid autem sequi esse commodi accusamus quidem pariatur! Quis.
+            </p>
+            <div class="user_form">
+                <input type="text" placeholder="이름입력">
+                <button type="submit">제출</button>
+            </div>
+            <div class="ppl">
+                <h3>광고</h3>
+                <p>광고내용</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        푸터입니다.
+    </footer>
+</body>
+</html>
