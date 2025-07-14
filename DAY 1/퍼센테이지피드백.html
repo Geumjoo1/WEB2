@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼센테이지실습 피드백</title>
+    <script src="https://kit.fontawesome.com/46ebd75e55.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: rgb(192, 227, 209);
+        }
+
+        i {
+            color: rgb(11, 27, 73);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            border: 1px solid #08653b;
+            padding: 0 16px;
+            margin: 16px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        li::before {
+            content: "";
+            height: 80px;
+            width: 0;
+            background: #022c19;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.7s;
+            /* opacity: 0.6; */
+            z-index: -1;
+        }
+
+        li:nth-child(1):hover::before {
+            width: 20%;
+        }
+        li:nth-child(2):hover::before {
+            width: 40%;
+        }
+        li:nth-child(3):hover::before {
+            width: 60%;
+        }
+        li:nth-child(4):hover::before {
+            width: 80%;
+        }
+        li:nth-child(5):hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>웹과정 커리큘럼</h1>
+        <ul>
+            <li>
+                <h2>
+                    20%
+                    <i class="fa-brands fa-figma"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    40%
+                    <i class="fa-brands fa-html5"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    60%
+                    <i class="fa-brands fa-css"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    80%
+                    <i class="fa-brands fa-js"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    100%
+                    <i class="fa-solid fa-user-tie"></i>
+                </h2>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
