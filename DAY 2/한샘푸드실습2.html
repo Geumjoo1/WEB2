@@ -12,42 +12,61 @@
         }
 
         @font-face {
-            font-family: 'NanumSquareNeoVariable';
-            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
-            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
+            font-family: 'NanumSquareNeoHeavy';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf) format("truetype");
         }
 
-        ul {
-            list-style: none;
-        }
 
-        li {
-            background:#FFB289;
-            width: 500px;
-            border-radius: 24px;
-        }
+       section {
+        background: #FFB289;
+        width: 500px;
+        border-radius: 24px;
+        height: 400px;
+       }
 
-        .text_area > h2 {
-            font-family: 'NanumSquareNeoVariable';
-            font: px;
-        }
+       .number {
+        font-size: 80px;
+        font-weight: 900;
+        color: #572616;
+        margin: 48px;
+        text-align: left;
+        padding: 32px 0 ;
+        left: 20%;
+        top: 20%;
+       }
+
+       .txt {
+        font-size: 20px;
+        font-weight: 700;
+        color: #572616;
+        line-height: 35px;
+        margin: 48px;
+        font-family: 'NanumSquareNeoBold';
+        position: relative;
+        bottom: 70px; 
+       }
+
+       .bg_img {
+        background: url(./한샘푸드\ 도시락.jpeg) no-repeat;
+        width: 100%;
+        height: 200px;
+       }
+
+        div {
+        box-sizing: border-box;
+       }
     </style>
 </head>
 <body>
     <section>
-        <ul>
-            <li>
-                <div class="text_area">
-                    <h2>10+</h2>
-                    <p>
-                    10가지의 다양한 반찬 제공으로
-                    <br>
-                    한끼의 식사도 정성스럽게
-                    </p>
-                </div>
-                <figure class="img"></figure>
-            </li>
-        </ul>
+        <div class="number">10+</div>
+        <div class="txt">
+            10가지의 다양한 반찬 제공으로
+            <br>
+            한끼의 식사도 정성스럽게
+        </div>
+        <figure class="bg_img"></figure>
     </section>
 </body>
 </html>
