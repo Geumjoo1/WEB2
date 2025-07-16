@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에그드랍 피드백</title>
+    <style>
+       @font-face {
+            font-family: 'Cafe24Meongi-W-v1.0';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 100px 0;
+        }
+
+        section {
+            display: flex;
+            position: relative;
+            align-items: flex-end;
+            gap: 60px;
+        }
+
+        h2 {
+            position: absolute;
+            top: -50px;
+            width: 100%;
+            text-align: center;
+            font-size: 100px;
+            font-family: 'Cafe24Meongi-W-v1.0';
+            z-index: 1;
+        }
+
+        figure > img {
+            transform: translateX(-100%);
+            animation-name: img_show;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes img_show {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>o Egg Makes Better o</h2>
+        <figure>
+            <img src="./에그드랍.jpg" alt="">
+        </figure>
+        <div class="text_box">
+            <h3>일상의 수준을 높이다</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugit sed autem asperiores aspernatur
+                <br>
+                repellat dolorum quod voluptas voluptatibus, rem placeat. 
+                <br>
+                <br>
+                Voluptate quam necessitatibus reprehenderit quo asperiores aspernatur, enim provident?
+            </p>
+        </div>
+    </section>
+</body>
+</html>
