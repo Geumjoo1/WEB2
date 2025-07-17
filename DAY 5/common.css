@@ -1,0 +1,22 @@
+.d_flex {
+    display: flex;
+}
+
+.bt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ac {
+    display: flex;
+    align-items: center;
+}
+
+.tc {
+    text-align: center;
+}
+
+:root {
+    --bg_color: blue;
+    --f_color: skyblue;
+}

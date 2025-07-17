@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야매슬라이드 피드백</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+        } */
+
+        button {
+            margin: 50px auto;
+            display: block;
+            padding: 16px 24px;
+            font-size: 24px;
+            border: none;
+            background-color: rgb(24, 104, 157);
+            color: #fff;
+            border-radius: 16px;
+            cursor: pointer;
+            box-shadow: 5px 10px 10px #d8d8d8;
+        }
+
+        ul {
+            display: flex;
+            width: 1200px;
+            overflow: hidden;
+            /* list-style: none; */
+            margin: 0 auto;
+        }
+        
+        li {
+            min-width: 268px;
+            height: 150px;
+            margin: 0 16px;
+        }
+
+        button:focus + ul li {
+            animation: slide 5s forwards;
+            animation-timing-function: cubic-bezier(0.74,-0.17,0.04,1.27);
+        }
+
+
+        li:nth-child(1) {
+            background: url(./고양이.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(2) {
+            background: url(./너구리.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(3) {
+            background: url(./다람쥐.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(4) {
+            background: url(./여우.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(5) {
+            background: url(./판다.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(6) {
+            background: url(./푸들.jpeg);
+            background-size: cover;
+        }
+
+        @keyframes slide {
+            20% {
+                transform: translateX(0);
+            }
+            
+            100% {
+                transform: translateX(-1200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button>
+            동물이 지나가용
+        </button>
+        <ul class="d_flex">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>
