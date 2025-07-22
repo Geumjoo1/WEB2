@@ -5,15 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>미디어쿼리 실습</title>
     <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            font-size: 24px;
+        }
 
+        .box:nth-child(1) {
+            background-color: pink;
+            width: 100%;
+        }
+        .box:nth-child(2) {
+            background-color: rgb(108, 102, 219);
+            width: 100%;
+            display: none;
+        }
+        .box:nth-child(3) {
+            background-color: rgb(135, 184, 224);
+            width: 100%;
+            display: none;
+        }
+        .box:nth-child(4) {
+            background-color: rgb(231, 142, 126);
+            width: 100%;
+            display: none;
+        }
+
+        @media (max-width: 1280px) {
+            .box:nth-child(1) {
+                display: none;
+            }
+        }
+        
+        @media (min-width: 760px) and (max-width: 1280px) {
+            .box:nth-child(2) {
+                display: none;
+            }
+        }
+        
+        웹 @media (min-width: 360px) and (max-width: 760px) {
+            .box:nth-child(3) {
+                display: none;
+            }
+        } 
+        
+        @media (-width: 360px) {
+            .box:nth-child(4) {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="media">
-        <div class="media_1"></div>
-        <div class="media_2"></div>
-        <div class="media_3"></div>
-        <div class="media_4"></div>
-    </div>
+    <section>
+        <div class="box">
+            저는 브라우저 크기의 100%를 차지하고 브라우저가 1280보다 작아지면 사라져요.
+        </div>
+        <div class="box">
+            저는 브라우저의 크기가 760보다 크고 1280px보다 작을때만 나타나요.
+        </div>
+        <div class="box">
+            저는 브라우저의 크가 760px 이하일때 나타나고 브라우저가 360px보다 작아지면 다시 사라져요.
+        </div>
+        <div class="box">
+            저는 브라우저의 크기가 360px 이하일때 나타나요.
+        </div>
+    </section>
 </body>
 </html>
