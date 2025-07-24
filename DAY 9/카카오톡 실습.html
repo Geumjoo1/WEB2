@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오톡 실습</title>
+    <script src="https://kit.fontawesome.com/46ebd75e55.js" crossorigin="anonymous"></script>
+    <style>
+        /* pc 헤더 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            padding: 4px 8px;
+        }
+
+        .pc_top_header {
+            display: flex;
+            margin: 12px;
+            padding: 24px;
+            justify-content: space-between;
+        }
+
+        .pc_top_header > .pc_top_icon {
+            display: flex;
+            gap: 12px ;
+        }
+
+        h1 {
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="pc_header">
+            <div class="pc_top_header">
+                <h1>kakao</h1>
+                <ul class="pc_top_content">
+                    <li>
+                        <a href="#">소개</a>
+                    </li>
+                    <li>
+                        <a href="#">기술과 서비스</a>
+                    </li>
+                    <li>
+                        <a href="#">약속과 책임</a>
+                    </li>
+                    <li>
+                        <a href="#">소식</a>
+                    </li>
+                    <li>
+                        <a href="#">투자정보</a>
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <!-- 화살표 아이콘 -->
+                    </li>
+                </ul>
+                <div class="pc_top_icon">
+                    <div>
+                        <!-- 돋보기 아이콘 -->
+                        <i class="fa-solid fa-magnifying-glass "></i>
+                    </div>
+                    <div>
+                        <!-- 언어 아이콘  -->
+                        <i class="fa-solid fa-globe"></i>
+
+                    </div>
+                    <div>
+                        <!-- 달 아이콘 -->
+                        <i class="fa-regular fa-moon"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pc_bottom_content">
+                <h2>카카오톡</h2>
+                <ul>
+                    <li>
+                        <a href="#">카톡 안녕가이드</a>
+                    </li>
+                    <li>
+                        <a href="#">카톡설명서</a>
+                    </li>
+                    <li>
+                        <a href="#">다운로드</a>
+                        <!-- 다운로드 아이콘 -->
+                        <i class="fa-solid fa-circle-down"></i>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <div class="mo_header">
+            <h2>kakao</h2>
+            <div class="mo_top">
+                <div>
+                    <!-- 돋보기 아이콘 -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- 햄버거 아이콘 -->
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+            </div>
+            <h2>카카오톡</h2>
+            <div class="mo_bottom">
+                <ul>
+                    <li>다운로드</li>
+                    <i class="fa-solid fa-circle-down"></i>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
