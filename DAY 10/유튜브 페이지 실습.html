@@ -5,11 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>유튜브 페이지 실습</title>
     <script src="https://kit.fontawesome.com/46ebd75e55.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header_top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 60px;
+            height: 56px;
+            flex-direction: row;
+        }
+
+        .search_box {
+            display: flex;
+            margin: 0;
+            padding: 0 4px;
+            height: 40px;
+            gap: 12px;
+            border: 1px solid #000;
+            border-radius: 50px;
+        }
+
+        .search_box > input {
+            border: none;
+            background: none;
+        }
+
+        .search_box > a {
+            text-decoration: none;
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        figure > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header_top">
-            <div>
+            <div class="menu_bar">
                 <!-- 메뉴 아이콘 -->
                 <i class="fa-solid fa-bars"></i>
             </div>
